@@ -1,6 +1,4 @@
 language: generic
-node_js:
-  - '11.10.1'
 
 sudo: required
 services:
