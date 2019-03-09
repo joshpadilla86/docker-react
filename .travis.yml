@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t jprogramtech/docker-react -f Dockerfile.dev .
+
+  script:
+    - docker run jprogramtech/docker-react npm run test -- --coverage
