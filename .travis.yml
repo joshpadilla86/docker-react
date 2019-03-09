@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t jprogramtech/docker-react -f Dockerfile.dev .
 
-  script:
-    - docker run jprogramtech/docker-react npm run test -- --coverage
+script:
+  - docker run jprogramtech/docker-react npm run test -- --coverage
